@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="conatiner">
+        <h1>Cadastro de produtos</h1>
+
+        <!-- Formulario para adicionar/editar produtos -->
+        <form id="produtoForm">
+            <label>Nome: </label>
+            <input type="text" id="nome" required><br><br>
+
+            <label>Preço: </label>
+            <input type="number" id="preco" required step="0.5"><br><br>
+
+            <label>Disponibilidade: </label>
+            <select id="disponibilidade"><br><br>
+                <option value="indisponivel">Indisponivel</option>
+            </select>
+            <br><br>
+
+            <input type="hidden" id="produtoId">
+            <button type="submit">Salvar</button>
+            <button type="reset" id="cancelar">Cancelar</button>
+
+            <!-- Tabela para exibir os produtos -->
+            <h2>Lista dos Produtos</h2>
+
+            <table id="produtoTabela">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Disponibilidade</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os dados dos produtos serão exibidos aqui -->
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

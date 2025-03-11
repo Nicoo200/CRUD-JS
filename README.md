@@ -1,2 +1,2 @@
 # CRUD-JS
-Crud simples, com HTML E CSS JAVASCRIPT
+Crud simples, com HTML, CSS E JAVASCRIPT
